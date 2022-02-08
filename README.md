@@ -1,2 +1,2 @@
-# Git---Comandos-Utiles
+# Comandos Utiles de Git
 Git es un sistema de control de versiones , en este repositorio hay comandos útiles
