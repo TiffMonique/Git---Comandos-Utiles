@@ -66,24 +66,25 @@ history| Ver los últimos comandos que ejecutamos y un número especial con el q
 | Comando | Función|
 |:-------|:------------|
  **git init** | Inicializa un repositorio git
-**git add .** | Agregar todos los archivos al staging area
-**git commit -m "mensaje"** | Agregar un mensaje al commit
+ **git clone url_servidor_remoto** | Clonar un repositorio
 **git branch** | Crear una rama|
- **git checkout < branch >**|Cambiar de una rama a otra
+ **git checkout <branch>**|Cambiar de una rama a otra
  **git diff** | Muestra los cambios que se han hecho en el staging area
- **git push** | Enviar los archivos del staging area a un repositorio remoto
+ **git push** | Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
  **git pull** | Recibir los archivos de un repositorio remoto (cambios hechos por otros desarrolladores)
  **git log** | Muestra los commits hechos en el repositorio
- **git merge** | Unir dos ramas
- **git clone** | Clonar un repositorio
+ **git merge** | Unir dos ramas, Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+ 
  
  ### Comandos para mover archivos entre estados de Git
 | Comando | Función|
 |:-------|:------------|
  **git status** | Muestra el estado de los archivos (si estan en staging area o en el respositorio)
  **git add <files>** | Agregar un archivo al staging area
+    **git add .** | Agregar todos los archivos al staging area
  **git reset HEAD:**| nos ayuda a sacar archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venían de Unstaged, vuelven allí. Y lo mismo se venían de Untracked.
  **git commit** | nos ayuda a mover archivos de Unstaged a Tracked
+**git commit -m "mensaje"** | Agregar un mensaje al commit
  **git rm:** |este comando necesita alguno de los siguientes argumentos para poder ejecutarse correctamente:
 - git rm --cached: Mueve los archivos que le indiquemos al estado Untracked.
 - git rm --force: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
