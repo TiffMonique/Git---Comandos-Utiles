@@ -81,9 +81,9 @@ history| Ver los últimos comandos que ejecutamos y un número especial con el q
 |:-------|:------------|
  **git status** | Muestra el estado de los archivos (si estan en staging area o en el respositorio)
  **git add <files>** | Agregar un archivo al staging area
-    **git add .** | Agregar todos los archivos al staging area
+ **git add .** | Agregar todos los archivos al staging area
  **git reset HEAD:**| nos ayuda a sacar archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venían de Unstaged, vuelven allí. Y lo mismo se venían de Untracked.
- **git commit** | nos ayuda a mover archivos de Unstaged a Tracked
+**git commit** | nos ayuda a mover archivos de Unstaged a Tracked
 **git commit -m "mensaje"** | Agregar un mensaje al commit
  **git rm:** |este comando necesita alguno de los siguientes argumentos para poder ejecutarse correctamente:
 - git rm --cached: Mueve los archivos que le indiquemos al estado Untracked.
